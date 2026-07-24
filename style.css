@@ -1,16 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-*{
-   font-family: "Inter", sans-serif;
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6, span {
-  color: #243e63;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  color: #09090c;
   text-align: center;
   line-height: 1.25;
+}
+
+span {
+  color: #0819ac;
 }
 
 p {
@@ -22,9 +32,18 @@ li {
   list-style-type: none;
 }
 
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*NAVIGATION BAR */
 
-nav {
+.nav {
   height: 100px;
   width: 100%;
   max-width: 1000px;
@@ -34,6 +53,89 @@ nav {
   align-items: center;
 }
 
+.nav__row {
+  padding: 36px;
+}
+
 .nav__link--list {
+  color: #09090c;
   display: flex;
+  gap: 24px;
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__logo--img {
+  height: 40px;
+  width: 40px;
+}
+
+.company__name {
+  font-size: 26px;
+  font-weight: 900;
+  justify-self: flex;
+  align-items: center;
+}
+
+.nav__link--anchor-primary {
+  margin: 0px 0px 2px;
+  padding: 10px 32px;
+  margin-top: 2px;
+  border-radius: 9999px;
+  color: #ffff;
+  background-color: #6415ff;
+  line-height: 1.5;
+  border: none;
+  width: auto;
+  transition: all 300ms ease;
+}
+
+.nav__link {
+  font-size: 12px;
+  font-weight: 600;
+  position: relative;
+  margin: 0 24px;
+  letter-spacing: 0 0.35px;
+  text-decoration: none;
+}
+
+.nav__logo {
+  display: flex;
+}
+/*LANDING*/
+
+.landing__row {
+  
+}
+
+.landing__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing__info--para {
+  display: flex;
+  flex-direction: column;
+}
+
+.landing__img {
+  width: 100%
+}
+
+
+ 
+
+
+
+
+
+/* Small screens */
+
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
