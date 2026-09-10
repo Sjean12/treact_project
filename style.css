@@ -259,7 +259,32 @@ h1 {
   text-align: left;
 }
 
-/* Features Section 
+/* Features Section */
+
+
+.features__title {
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0px 16px 16px 0px;
+  font-weight: 500;
+}
+  
+
+.features__subtitle {
+  font-size: 48px;
+  line-height: 1.25;
+  padding: 0px 16px 16px 0px;
+  text-align: center;
+  font-weight: 900;
+}
+
+
+.features__para {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 32px 0;
+  text-align: center;
+}
 
 .features {
   display: flex;
@@ -268,11 +293,9 @@ h1 {
   width: 25%;
   max-width: 200px;
   padding: 32px;
-  position: relative;
 }
 
 .features__row {
-  display: flex;
   flex-direction: row;
 }
 
@@ -284,11 +307,6 @@ h1 {
   margin: 28px auto;
 }
 
-.features__img {
-  width: 100%;
-  max-width: 100px;
-  height: 100%;
-}
 
 .features__img--wrapper {
   position: relative;
@@ -296,8 +314,16 @@ h1 {
   justify-content: center;
   align-items: center;
   width: 25%;
-  padding: 25px 16px;
+  /*padding: 25px 16px;*/
 }
+
+.features__img {
+  width: 100%;
+  max-width: 100px;
+  height: 100%;
+}
+
+
 
 .features__list {
   display: flex;
@@ -309,11 +335,10 @@ h1 {
 
 .features__para {
   width: auto;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 500;
   padding: 36px 0;
   line-height: 1.5;
-  text-align: center;
-  justify-content: center;
   max-width: 576px;
 }
 
@@ -322,9 +347,6 @@ h1 {
   font-weight: 900;
 }
 
-.features__h3 {
-  position: absolute;
-}
   /*
 
 .features {
@@ -357,7 +379,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
 }
-*/
+
 
 /*PRICING */
 
@@ -556,14 +578,17 @@ h1 {
   justify-content: space-between;
   width: 50%;
   height: 100%;
-  padding: 0 48px;
+  padding: 32px 0 0;
+  padding-left: 64px;
 }
 
 .steps__number {
-  font-size: 32px;
-  font-weight: 700;
-  opacity: 0.25;
+  font-size: 36px;
+  font-weight: 600;
+  color: #cbd5e0;
   display: flex;
+  line-height: 1;
+  padding: 12px;
 }
 
 .steps__number--group {
@@ -575,7 +600,6 @@ h1 {
   font-weight: 700;
   font-size: 16px;
   color: #1a202c;
-  padding: 16px 0;
   text-align: left;
   letter-spacing: 1.6px;
 }
@@ -586,26 +610,36 @@ h1 {
   font-weight: 900;
   padding: 16px 0;
   letter-spacing: 0.025em;
+  margin: 16px 0;
 }
 
 .steps__number--title {
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   color: #1a202c;
-  padding: 16px 0;
+  letter-spacing: 1.6px;
+  padding: 12px 0;
+
 }
 
 .steps__paragraph {
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 16px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2;
+  padding: 0 0 14px 0;
   text-align: left;
-  color: #a0aec0;
+  color: #718096;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .number__para {
   display: flex;
-  
   text-align: left;
 }
+
+.number__para--group {
+  flex-direction: column;
+  display: flex;
+  padding: 0 32px;
+ }
