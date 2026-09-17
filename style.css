@@ -329,22 +329,11 @@ h1 {
 .steps__number--title {
    font-size: 18px;
   font-weight: 700;
-  font-size: 20px;
-  font-weight: 600;
   color: #1a202c;
   padding: 16px 0;
   letter-spacing: 1.6px;
-  padding: 12px 0;
 }
-/*
-.steps__paragraph {
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 16px 0;
-  text-align: left;
-  color: #a0aec0;
-  display: flex;
-}*/
+
 
 .steps__paragraph {
   font-size: 16px;
@@ -355,7 +344,6 @@ h1 {
   padding: 0 0 14px 0;
   text-align: left;
   color: #a0aec0;
-  color: #718096;
   display: flex;
   flex-wrap: wrap;
 }
@@ -478,9 +466,6 @@ h1 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-.card__2 {
-  color: #f7f7f7;
-}
 .card_3 {
   width: 300px;
   margin: 0 auto;
